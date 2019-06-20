@@ -36,7 +36,7 @@ var devMountainGoal = null
 //plus the value of the name parameter.
 
 function greeting (name){
-  console.log ("Hello, " name)
+  console.log ("Hello, "+ name)
 }
 greeting (Garrett)
 //////////////////PROBLEM 7////////////////////
