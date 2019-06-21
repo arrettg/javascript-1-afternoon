@@ -36,9 +36,9 @@ var devMountainGoal = null
 //plus the value of the name parameter.
 
 function greeting (name){
-  console.log ("Hello, "+ name)
+  return "Hello, " + name
 }
-greeting (Garrett)
+
 //////////////////PROBLEM 7////////////////////
 
 //Rewrite the function greeting as a function expression.
@@ -85,18 +85,18 @@ var devMountainClassPet = dog.name
 // with NAMEPARAM being the name parameter being passed in
 
 function nameCheck (name){
-  if (name = "Steven") {
+  if (name === "Steven") {
     return "What is up Steven?"
   } 
-else if (name = "Bryan"){
+else if (name === "Bryan"){
   return "Hey Bryan!"
 }
 else {
-  return "Cool name, NAMEPARAM"
+  return "Cool name, " + name
 }
 
 }
-nameCheck (NAMEPARAM)
+
 
 //////////////////PROBLEM 11////////////////////
 
@@ -123,12 +123,12 @@ var mathSum = add(3, 4)
 // Otherwise, you should return the string 'you need to evaluate your favorite color choice'
 
 function faveColorFinder (color) {
-  if (color = "red"){
+  if (color === "red"){
     return "red is a great color"
   }
-  else if (color = "green"){
+  else if (color === "green"){
     return "green is a solid favorite color"
-  }else if (color = "black"){
+  }else if (color === "black"){
     return "so trendy"
   }
   else {
@@ -167,7 +167,7 @@ let bathroomScope = ["duck", "rubberDuck"];
 let bathtubScope = ["duck", "sailorDuck", "rubberDuck"];
 
 //This array should contain the variable names (as strings) accessible in the pond function.
-let pondScope = ["duck", "sailorDuck", "rubberDuck", "realDuck"];
+let pondScope = ["realDuck", "duck"];
 
 //////////////////PROBLEM 14////////////////////
 
@@ -181,5 +181,6 @@ var age = 24
 age++
 
 // Good news! We can live forever. Set your age to 999
+
 
 age = 999
